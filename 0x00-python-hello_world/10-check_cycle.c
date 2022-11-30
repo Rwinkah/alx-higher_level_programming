@@ -31,5 +31,6 @@ else if (temp->next == NULL)
 temp = temp->next;
 }
 
+free(temp);
 return (0);
 }
