@@ -7,8 +7,8 @@ res3 = 'and is greater than 5'
 if number < 0 and (number % 10) != 0:
     print(f'Last digit of {number} is -{abs(number) % 10} {res1}')
 elif (number % 10) < 6 and (number % 10) != 0:
-   print(f'Last digit of {number} is {number % 10} {res1}') 
+    print(f'Last digit of {number} is {number % 10} {res1}')
 elif (number % 10) == 0:
-   print(f'Last digit of {number} is 0 {res2}') 
+    print(f'Last digit of {number} is 0 {res2}')
 else:
-   print(f'Last digit of {number} is {number % 10} {res3}') 
+    print(f'Last digit of {number} is {number % 10} {res3}')
