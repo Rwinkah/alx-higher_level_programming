@@ -1,11 +1,7 @@
 #!/usr/bin/python3
 def main():
     for i in range(99):
-        if i < 10:
-            meg = '0' + str(i)
-        else:
-            meg = str(i)
-        print(meg, end=', ')
+        print('{:02d}'.format(i), end=', ')
     print(99)
 
 
