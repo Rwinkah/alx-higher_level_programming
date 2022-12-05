@@ -3,6 +3,6 @@ def new_in_list(my_list, idx, element):
     if my_list is None:
         return None
     new_list = my_list[:]
-    if idx < len(new_list) and idx > 0:
+    if idx < len(new_list) and idx >= 0:
         new_list[idx] = element
     return new_list
