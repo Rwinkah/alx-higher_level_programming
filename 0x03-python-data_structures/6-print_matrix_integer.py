@@ -2,6 +2,7 @@
 def print_matrix_integer(matrix=[[]]):
     i = 1
     if matrix is None:
+        print("")
         return matrix
     for row in matrix:
         for cell in row:
