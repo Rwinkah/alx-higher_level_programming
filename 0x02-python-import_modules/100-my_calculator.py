@@ -3,7 +3,7 @@ def main():
     from sys import argv, exit
     import calculator_1 as calc
     if len(argv) != 4:
-        print('Usage: ./100-my_calculator.py a operator b')
+        print('Usage: ./100-my_calculator.py <a> <operator> <b>')
         exit(1)
     operator_list = ['+', '-', '*', '/']
     if argv[2] not in operator_list:
