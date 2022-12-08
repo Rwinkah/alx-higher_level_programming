@@ -20,6 +20,8 @@ def main():
         result = calc.mul(int(argv[1]), int(argv[3]))
         print('{} * {} = {}'.format(argv[1], argv[3], result))
     if argv[2] == '/':
+        if argv[3] == '0':
+            result = 0
         result = calc.div(int(argv[1]), int(argv[3]))
         print('{} / {} = {}'.format(argv[1], argv[3], result))
 
