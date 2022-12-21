@@ -11,5 +11,6 @@ def safe_print_list(my_list=[], x=0):
                 print(my_list[num], end='')
                 i += 1
         except (IndexError):
+            print("")
             return (i)
     return (i)
