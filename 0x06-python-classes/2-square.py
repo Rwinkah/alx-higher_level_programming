@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-""" Module defining a class square with validation for private variable size """
+""" Module defining a class square with validation for size """
 
 
 class Square:
