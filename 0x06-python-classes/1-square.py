@@ -4,10 +4,10 @@
 
 
 class Square:
+    """ Square class """
     def __init__(self, size):
-        """
-            Initialization method for the class
-            Args:
-               size(int): Size of the square.
+        """ Initialization method for the class
+        Args:
+                size(int): Size of the square.
         """
         self.__size = size
