@@ -27,6 +27,10 @@ class Square:
 
     def my_print(self):
         area = self.__size
+        if area == 0:
+            print("")
+            return
+
         for length in range(area):
             for breadth in range(area):
                 print('#', end='')
