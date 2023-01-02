@@ -51,11 +51,13 @@ class Rectangle:
             return 2 * (self.__width + self.__height)
 
     def __str__(self):
+        if self.__width == 0 or self.__height == 0:
+            return ""
         disp = []
         for i in range(self.__height):
             for width in range(self.__width):
                 disp.append("#")
             if i != self.height - 1:
                 disp.append("\n")
- 
+
         return "".join(disp)
