@@ -3,4 +3,5 @@
 
 
 def lookup(obj):
+"""return list of attributes and methods"""
     return list(obj.__dict__)
