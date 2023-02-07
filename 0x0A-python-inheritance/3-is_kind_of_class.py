@@ -3,7 +3,7 @@
 
 
 def is_same_class(obj, a_class):
-    """ function to perform the check
+    """function to perform the check
     Args:
         obj (any): The object to check
         a_class: any class
