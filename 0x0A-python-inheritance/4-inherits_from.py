@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Check if Obj is an instance of a class  that inherita directly or indirectly"""
+""" Check if Obj  inherits directly or indirectly from class"""
 
 
 def inherits_from(obj, a_class):
@@ -11,4 +11,3 @@ def inherits_from(obj, a_class):
         Boolean
     """
     return (issubclass(type(obj), a_class) and type(obj) != a_class)
-
