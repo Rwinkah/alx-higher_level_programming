@@ -2,7 +2,7 @@
 """ Check if Obj is an instance of a class """
 
 
-def is_same_class(obj, a_class):
+def is_kind_of_class(obj, a_class):
     """function to perform the check
     Args:
         obj (any): The object to check
