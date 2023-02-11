@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Module creating an empty class """
+""" Module creating a class named Rectangle """
 
 
 class Rectangle(BaseGeometry):
