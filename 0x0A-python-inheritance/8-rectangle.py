@@ -3,8 +3,10 @@
 
 
 class Rectangle(BaseGeometry):
-    """An subclass of BaseGeometry named Rectangle"""
+    """A subclass of BaseGeometry named Rectangle"""
+
     def __init__(self, width, height):
+        """ Initialiazation method of the Rectangle class """
         self.__width = width
         self.__height = height
 
@@ -13,6 +15,7 @@ class Rectangle(BaseGeometry):
         raise Exception("area() is not implemented")
 
     def integer_validator(self):
+        """ Check for valid inputs """
         if type(self.__height) != int:
             raise TypeError("height must be an integer")
         if self.__height <= 0:
