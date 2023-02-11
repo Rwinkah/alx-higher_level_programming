@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" class Recangle inheriting from BaseGeometry """
+"""class Recangle inheriting from BaseGeometry"""
 BaseGeometry = __import__(7-base_geometry.py).BaseGeometry
 
 
