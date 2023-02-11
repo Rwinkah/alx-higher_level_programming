@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""My_int class with equality sign flipped"""
+"""Defines a class MyInt that inherits from int."""
 
 
 class MyInt(int):
