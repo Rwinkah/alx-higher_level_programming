@@ -21,11 +21,9 @@ class Rectangle(BaseGeometry):
         """Method to return the area of the rectangle."""
         return (self.__width * self.__height)
 
-
     def print(self):
         """Print method printing string representation of class."""
         print(self.str)
-
 
     def __str__(self):
         """String representation of class."""
