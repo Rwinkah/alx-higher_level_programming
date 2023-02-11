@@ -1,6 +1,5 @@
-able file 18 lines (15 sloc) 603 Bytes
 #!/usr/bin/python3
-"""Defines a class Rectangle that inherits from BaseGeometry."""
+"""class Rectangle that inherits from BaseGeometry."""
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
