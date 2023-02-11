@@ -11,4 +11,4 @@ class MyInt(int):
 
     def __ne__(self, other):
         """Magic method for inequality overwritten."""
-        return self.real == other 
+        return self.real == other
