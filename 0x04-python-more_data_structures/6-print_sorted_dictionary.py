@@ -8,7 +8,8 @@ def print_sorted_dictionary(a_dictionary):
     Args:
         a_dictionary(dict): dictionary to sort
     """
-
+    if type(a_dictionary) != dict:
+        return
     list_keys = list(a_dictionary.keys())
     list_keys.sort()
 
