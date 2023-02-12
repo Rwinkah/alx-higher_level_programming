@@ -1,4 +1,4 @@
-!/usr/bin/python3
+#!/usr/bin/python3
 """Defines function for printing dictionary elements by sorted keys."""
 
 
