@@ -5,7 +5,7 @@ using utf-8
 """
 
 
-def write_file(filename="", text=""):
+def append_write(filename="", text=""):
     """
     Fucntion to write text to file
     Args:
@@ -13,6 +13,6 @@ def write_file(filename="", text=""):
         text: text to write to file
     """
 
-    with open(filename, 'w', encoding="utf-8") as f:
+    with open(filename, 'a', encoding="utf-8") as f:
         wc = f.write(text)
     return (wc)
