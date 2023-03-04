@@ -10,4 +10,4 @@ def update_dictionary(a_dictionary, key, value):
         key(string): Key to add or update in dictionary
         value(any): value to add with key
     """
-    a_dictionary[key] = value
+    return a_dictionary[key] = value
