@@ -10,7 +10,7 @@ def simple_delete(a_dictionary, key=""):
         key(string): key to delete from dict
     """
     if key not in a_dictionary:
-        return
+        return a_dictionary
 
     a_dictionary.pop(key)
     return a_dictionary
