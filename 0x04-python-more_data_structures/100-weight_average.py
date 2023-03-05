@@ -17,7 +17,5 @@ def weight_average(my_list=[]):
     for i in my_list:
         we_average += i[0] * i[1]
         we_div += i[1]
-    
-    return we_average / we_div 
 
-
+    return we_average / we_div
