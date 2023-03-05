@@ -12,5 +12,5 @@ def multiply_by_2(inp_dict):
     list_keys = [i for i in inp_dict.keys()]
     new_dict = inp_dict.copy()
     for i in list_keys:
-       new_dict[i] *= 2
+        new_dict[i] *= 2
     return new_dict
