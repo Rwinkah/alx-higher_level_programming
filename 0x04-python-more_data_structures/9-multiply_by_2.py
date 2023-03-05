@@ -9,7 +9,7 @@ def multiply_by_2(inp_dict):
         new_dictionary
     """
 
-    list_keys = [i for i in inp_dic.keys()]
+    list_keys = [i for i in inp_dict.keys()]
     new_dict = inp_dict.copy()
     for i in list_keys:
        new_dict[i] *= 2
