@@ -15,5 +15,5 @@ def roman_to_int(roman_string):
             sum_num -= 2*r_dict[list_roman[i-1]]
             sum_num += r_dict[list_roman[i]]
         else:
-            sum_num += rmdict[list_roman[i]]
+            sum_num += r_dict[list_roman[i]]
     return sum_num
