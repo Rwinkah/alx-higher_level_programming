@@ -8,5 +8,5 @@ def best_score(inp_dict):
     Return:
         key: string
     """
-    if inp_dict is not None and len(input_dict) != 0:
+    if inp_dict is not None and len(inp_dict) != 0:
         return(max(inp_dict, key=inp_dict.get))
