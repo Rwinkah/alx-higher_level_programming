@@ -2,11 +2,12 @@
 """
     function to add two ints
     Args:
-	a: first number
+        a: first number
         b: second number
     Return:
         int
 """
+
 
 def add_integer(a, b=98):
     """
