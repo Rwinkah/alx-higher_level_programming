@@ -18,3 +18,13 @@ New:
 <BLANKLINE>
 World.
 <BLANKLINE> 
+
+>>> te_ind(None)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+>>> te_ind(90.6)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
