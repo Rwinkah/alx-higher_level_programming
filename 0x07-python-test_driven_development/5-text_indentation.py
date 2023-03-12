@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 module to priny two new lines after encountering '.' or '?'
 """
