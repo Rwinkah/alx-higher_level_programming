@@ -1,0 +1,20 @@
+=======================================
+test for indentation printer
+=======================================
+
+>>> te_ind = __import__('5-text_indentation').text_indentation
+
+>>> te_ind("Hello World")
+Hello World
+
+>>> te_ind("Hello.  ")
+Hello.
+<BLANKLINE>
+
+>>> te_ind('Brave? New: World.')
+Brave?
+<BLANKLINE>
+New:
+<BLANKLINE>
+World.
+<BLANKLINE> 
