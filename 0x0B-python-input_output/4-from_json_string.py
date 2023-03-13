@@ -2,6 +2,7 @@
 """
 Module to read data from an input json file
 """
+import json
 
 
 def from_json_string(my_str):

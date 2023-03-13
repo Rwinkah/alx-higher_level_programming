@@ -5,6 +5,7 @@ Args:
     my_obj: input object
 """
 
+import json
 
 def to_json_string(my_obj):
     """ Return json representation of an object """
