@@ -1,24 +1,27 @@
 #!/usr/bin/python3
-""" Update on class student """
+""" update class Student """
 
 
 class Student:
-    """ Class for student """
+    """ This is a class, student """
+
     def __init__(self, first_name, last_name, age):
-        """ init function for student """
-        self.fname = first_name
-        self.lname = last_name
+        """ Initializes the student with a firstName, lastName, age """
+
+        self.first_name = first_name
+        self.last_name = last_name
         self.age = age
 
-    def to_json(self, att=None):
-        """ return dict representation of required attributes """
+    def to_json(self, attrs=None):
+        """ return the dict representation of student """
 
-        if (isinstance(att, list) and all(type(i) == str for i in att)):
-            return {i: getattr(self, i) for i in att if hasattr(self, i)}
-        else:
-            return self.__dict__
+        if (type(attrs) == list and all(type(txt) == str for txt in attrs)):
+            return {i: getattr(self, i) for i in attrs if hasattr(self, i)}
 
-    def reload_from_json(self, json_dict):
-        """ load data for attrs from student """
-        for attrib, value in json_dict.items():
-            setattr(self, attrib, value)
+        return self.__dict__
+
+    def reload_from_json(self, json):
+        """ replaces all attrs of the student """
+
+        for name, value in json.items():
+            setattr(self, name, value)
