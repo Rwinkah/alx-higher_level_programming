@@ -2,7 +2,7 @@
 """ Update on class student """
 
 
-class student:
+class Student:
     """ Class studnet """
 
     def __init__(self, first_name, last_name, age):
