@@ -6,7 +6,7 @@ def main():
 
     import argparse
     import MySQLdb
-    parser = argparse.ArgumentParser(description='[username] [password] [database]')
+    parser = argparse.ArgumentParser(description='[user] [passwd] [db]')
 
     parser.add_argument('uname', help="your sql username")
     parser.add_argument('passwd', help="your sql password")
@@ -14,7 +14,8 @@ def main():
 
     args = parser.parse_args()
 
-    db = MySQLdb.connect(host='localhost', user=args.uname, passwd=args.passwd, port=3306, db=args.dbase)
+    db = MySQLdb.connect(host='localhost', user=args.uname, passwd=args.passwd,
+                         port=3306, db=args.dbase)
 
     curs = db.cursor()
 
@@ -25,5 +26,6 @@ def main():
     curs.close()
     db.close()
 
+
 if __name__ == "__main__":
-    main() 
+    main()
