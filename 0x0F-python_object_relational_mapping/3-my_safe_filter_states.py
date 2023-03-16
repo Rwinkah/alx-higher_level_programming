@@ -3,7 +3,10 @@
 
 
 def main():
-    """ Using mysqldb to check for a state in state table """
+    """
+    Using mysqldb to check for a state in state table
+    while escaping strings to avoid sql injection
+    """
     import argparse
     import MySQLdb
 
@@ -17,8 +20,9 @@ def main():
 
     db = MySQLdb.connect(host='localhost', port=3306, user=args.usr,
                          passwd=args.pwd, db=args.dbase)
+    state_name = args.search
     curs = db.cursor()
-    curs.execute("SELECT * FROM states WHERE name = '{}'".format(args.search))
+    curs.execute("SELECT * FROM states WHERE name = ?", (state_name,))
     row = curs.fetchone()
     print(row)
     curs.close()
