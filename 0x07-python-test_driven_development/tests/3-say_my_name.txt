@@ -1,0 +1,17 @@
+====================
+tests for name printing function
+================================
+
+
+
+>>> name_print = __import__('3-say_my_name').say_my_name
+
+
+>>> name_print(9, "joseph")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+
+>>> name_print("john", 316)
+Traceback (most recent call last):
+TypeError: last_name must be a string
