@@ -3,6 +3,7 @@
 
 
 def main():
+    """ select states that begin with N"""
     import argparse
     import MySQLdb
 

@@ -3,7 +3,7 @@
 
 
 def main():
-
+    """ show all states in state table """
     import argparse
     import MySQLdb
     parser = argparse.ArgumentParser(description='[user] [passwd] [db]')
