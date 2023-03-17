@@ -20,7 +20,7 @@ def main():
     curs = db.cursor()
     curs.execute("SELECT * FROM states")
     records = curs.fetchall()
-    [print(row) for row in records if row[1][0] == 'N'] 
+    [print(row) for row in records if row[1][0] == 'N']
     curs.close()
     db.close()
 
