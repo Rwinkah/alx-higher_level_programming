@@ -1,9 +1,17 @@
 #!/usr/bin/python3
-""" mysqldb project, intro to object relational mappers """
+"""
+mysqldb project, intro to object relational mappers
+with MySQLdb in python 
+"""
 
 
 def main():
-    """ show all states in state table """
+    """ show all states in state table
+    Args:
+        user: user name for the sql database
+        passwd: password for the sql database
+        dbase: database name to be worked on
+    """ 
     import argparse
     import MySQLdb
     parser = argparse.ArgumentParser(description='[user] [passwd] [db]')
