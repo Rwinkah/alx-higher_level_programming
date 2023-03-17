@@ -19,8 +19,9 @@ def main():
                          passwd=args.pwd, db=args.dbase)
     curs = db.cursor()
     curs.execute("SELECT * FROM states WHERE BINARY name = '{}'".format(args.search))
-    row = curs.fetchone()
-    print(row)
+    row = curs.fetchall()
+    for record in row:
+        print(record)
     curs.close()
     db.close()
 
