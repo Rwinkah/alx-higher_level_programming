@@ -18,10 +18,9 @@ def main():
                          port=3306, db=args.dbase)
 
     curs = db.cursor()
-    curs.execute("SELECT * FROM states WHERE name LIKE 'N%'")
+    curs.execute("SELECT * FROM states")
     records = curs.fetchall()
-    for row in records:
-        print(row)
+    [print(row) for row in records if row[1][0] == 'N'] 
     curs.close()
     db.close()
 
