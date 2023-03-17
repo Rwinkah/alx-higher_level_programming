@@ -18,7 +18,7 @@ def main():
     db = MySQLdb.connect(host='localhost', port=3306, user=args.usr,
                          passwd=args.pwd, db=args.dbase)
     curs = db.cursor()
-    curs.execute("SELECT * FROM states WHERE name = '{}'".format(args.search))
+    curs.execute("SELECT * FROM states WHERE BINARY name = '{}'".format(args.search))
     row = curs.fetchone()
     print(row)
     curs.close()
