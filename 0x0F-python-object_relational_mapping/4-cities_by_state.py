@@ -16,7 +16,9 @@ def main():
     db = ms.connect(host='localhost', user=args.uname, port=3306,
                     passwd=args.pwd, db=args.dbase)
     curs = db.cursor()
-    curs.execute("SELECT * FROM cities ORDER BY cities.id")
+    curs.execute("SELECT cities.id, cities.name, states.name FROM cities  \
+                 INNER JOIN states ON cities.state_id = states.id \
+                 ORDER BY cities.id")
     records = curs.fetchall()
     for row in records:
         print(row)
