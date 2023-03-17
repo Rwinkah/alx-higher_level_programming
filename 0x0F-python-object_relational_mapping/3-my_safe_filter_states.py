@@ -20,11 +20,10 @@ def main():
 
     db = MySQLdb.connect(host='localhost', port=3306, user=args.usr,
                          passwd=args.pwd, db=args.dbase)
-    state_name = args.search
+    search = args.search
     curs = db.cursor()
-    curs.execute("SELECT * FROM states WHERE name = ?", (state_name,))
-    row = curs.fetchone()
-    print(row)
+    curs.execute("SELECT * FROM states")
+    [print(state) for state in curs.fetchall() if state[1] in search]
     curs.close()
     db.close()
 
