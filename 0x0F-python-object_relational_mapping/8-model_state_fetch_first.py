@@ -4,6 +4,7 @@
 
 def main():
     """ query the states table and print the first record """
+
     from sqlalchemy import create_engine
     from sqlalchemy.orm import sessionmaker
     from sys import argv
@@ -14,9 +15,8 @@ def main():
     session = sessionmaker(bind=engine)
     new_session = session()
 
-    states = new_session.query(State)[0]
-    if states is not None:
-        print(str(states.id) + ":", states.name)
+    state = new_session.query(State).filter(State.id == 1)
+    print(str(state[0].id) + ":", state[0].name)
 
 
 if __name__ == '__main__':
