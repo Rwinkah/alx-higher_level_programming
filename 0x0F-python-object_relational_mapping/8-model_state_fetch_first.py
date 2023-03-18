@@ -15,8 +15,11 @@ def main():
     session = sessionmaker(bind=engine)
     new_session = session()
 
-    state = new_session.query(State).filter(State.id == 1)
-    print(str(state[0].id) + ":", state[0].name)
+    state = new_session.query(State).first()
+    if state is None:
+        print('Nothing')
+    else:
+        print(str(state.id) + ":", state.name)
 
 
 if __name__ == '__main__':
