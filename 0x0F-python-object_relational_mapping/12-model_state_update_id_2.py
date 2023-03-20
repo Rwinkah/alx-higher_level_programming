@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """ State update script for the state table
 """
 import sys
