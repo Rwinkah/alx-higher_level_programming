@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" add state object to the database
+""" prints the State object with the name passed as argument from the database
 """
 import sys
 from model_state import Base, State
