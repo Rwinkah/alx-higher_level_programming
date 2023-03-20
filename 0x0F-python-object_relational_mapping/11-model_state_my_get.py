@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+
+
 """ add state object to the database
 """
 import sys
