@@ -13,7 +13,7 @@ def main():
 
     args = {'email': argv[2]}
 
-    r = req.post(argv[1], params=args)
+    r = req.post(argv[1], data=args)
     print(r.text)
 
 
