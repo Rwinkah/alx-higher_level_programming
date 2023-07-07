@@ -19,13 +19,13 @@ def main():
 
     r = req.post('http://0.0.0.0:5000/search_user', data=args)
     try:
-       jsN = r.json()
-       if len(jsN) == 0:
-           print('No result')
-       else:
+        jsN = r.json()
+        if len(jsN) == 0:
+            print('No result')
+        else:
             print(f"[{jsN['id']}] {jsN['name']}")
-    except:
-       print('Not a valid JSON')
+        except json.JSONDecodeError:
+            print('Not a valid JSON')
 
 
 if __name__ == '__main__':
