@@ -11,7 +11,7 @@ def main():
     import requests as req
     r = req.get("https://alx-intranet.hbtn.io/status")
     print('Body response:')
-    print(f'\t- type: {type(r.content)}')
+    print(f'\t- type: {type(r.text)}')
     print(f'\t- content: {r.text}')
 
 
