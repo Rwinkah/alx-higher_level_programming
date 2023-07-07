@@ -15,3 +15,7 @@ def main():
 
     r = req.post(argv[1], params=args)
     print(r.text)
+
+
+if __name__ == '__main__':
+    main()
