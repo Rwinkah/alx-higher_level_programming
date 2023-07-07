@@ -12,7 +12,7 @@ def main():
     with urlopen(req) as response:
         resp = response.read()
         print('Body response:')
-        print(f"\t- type: class {type(resp)}")
+        print(f"\t- type: {type(resp)}")
         print(f"\t- content: {resp}")
         print(f"\t- utf8 content: {resp.decode('utf8')}")
 
