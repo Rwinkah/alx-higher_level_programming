@@ -12,7 +12,7 @@ def main():
     from sys import argv
 
     r = req.get(argv[1])
-    print(r.headers['X-Request-Id'])
+    print(r.headers.get('X-Request-Id'))
 
 
 if __name__ == '__main__':
