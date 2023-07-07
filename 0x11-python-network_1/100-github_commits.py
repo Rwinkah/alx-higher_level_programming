@@ -20,7 +20,7 @@ def main():
     resp = requests.get(url).json()
 
     for commit in resp[:10]:
-        out = f"{commit['sha']} : {commit['author']['login']}"
+        out = f"{commit['sha']}: {commit['author']['login']}"
         print(out)
 
 
