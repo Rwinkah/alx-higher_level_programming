@@ -10,12 +10,14 @@ def main():
     """
     from urllib.request import Request, urlopen
     from sys import argv
+    from urllib.parse import urlencode
 
-    data = argv[2].encode('ascii')
+    em = urlencode({'email': argv[2]})
+    data = em.encode('ascii')
     req = Request(argv[1], data)
 
     with urlopen(req) as resp:
-        print(response.read.decode('utf8'))
+        print(resp.read().decode('utf8'))
 
 
 if __name__ == '__main__':
