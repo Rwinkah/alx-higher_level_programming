@@ -20,9 +20,12 @@ def main():
     resp = requests.get(url).json()
 
     for commit in resp[:10]:
-        out = f"{commit['sha']}: {commit['author']['login']}"
-        print(out)
-
+        if 'name' not in commit['author']:
+            out = f"{commit['sha']}: {commit['author']['login']}"
+            print(out)
+        else:
+            out = f"{commit['sha']}: {commit['author']['name']}"
+            print(out)
 
 if __name__ == '__main__':
     main()
