@@ -24,8 +24,8 @@ def main():
             print('No result')
         else:
             print(f"[{jsN['id']}] {jsN['name']}")
-        except json.JSONDecodeError:
-            print('Not a valid JSON')
+    except json.Decode.JSONDecodeError as e:
+        print('Not a valid JSON')
 
 
 if __name__ == '__main__':
