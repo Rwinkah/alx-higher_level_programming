@@ -20,12 +20,13 @@ def main():
     resp = requests.get(url).json()
 
     for commit in resp[:10]:
-        if (commit['author']).get('name') is None:
+        if (commit['commit']['author']).get('name') is None:
             out = f"{commit['sha']}: {commit['author']['login']}"
             print(out)
         else:
-            out = f"{commit['sha']}: {commit['author']['name']}"
+            out = f"{commit['sha']}: {commit['commit']['author']['name']}"
             print(out)
+
 
 if __name__ == '__main__':
     main()
