@@ -20,7 +20,7 @@ def main():
     resp = requests.get(url).json()
 
     for commit in resp[:10]:
-        if 'name' not in commit['author']:
+        if (commit['author']).get('name') is None:
             out = f"{commit['sha']}: {commit['author']['login']}"
             print(out)
         else:
