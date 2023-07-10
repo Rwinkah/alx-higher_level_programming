@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Using github api to retrieve a user id
+Using github api to retrieve a user id with requests module
 """
 
 
