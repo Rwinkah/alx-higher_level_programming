@@ -24,7 +24,7 @@ def main():
             print('No result')
         else:
             print(f"[{jsN['id']}] {jsN['name']}")
-    except requests.exceptions:
+    except ValueError as e:
         print('Not a valid JSON')
 
 
