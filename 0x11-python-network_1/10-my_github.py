@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """
-Using github api to retrieve a user id with requests module
+my_github
+
+Module Using github api to retrieve a user id with requests module
 """
 
 
@@ -22,10 +24,13 @@ def main():
         try:
             resp = r.json()
             print(r.json()['id'])
-        except 
+        except ValueError:
+            print('None')
     else:
         print('None')
 
 
 if __name__ == '__main__':
     main()
+
+print(self.__doc__)
