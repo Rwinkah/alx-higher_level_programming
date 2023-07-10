@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 """
-my_github
-
-Module Using github api to retrieve a user id with requests module
+Module to check for git id
 """
 
 
