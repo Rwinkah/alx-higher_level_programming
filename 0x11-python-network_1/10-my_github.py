@@ -1,33 +1,13 @@
 #!/usr/bin/python3
 """
-my_github
-
-Module to access github api and return id number.
+Module using github api to retrieve id information.
 """
+import sys
+import requests
+from requests.auth import HTTPBasicAuth
 
 
-def main():
-    """
-    Code wrapped to prevent run on import.
-    """
-    import requests as req
-    from sys import argv
-    from requests.auth import HTTPBasicAuth as httpAuth
-
-    username = argv[1]
-    password = argv[2]
-    authe = httpAuth(username, password)
-
-    r = req.get('https://api.github.com/users', auth=authe)
-    if r.status_code == 200:
-        try:
-            response = r.json()
-            print(r.json()[0].get('id'))
-        except ValueError:
-            print('None')
-    else:
-        print('None')
-
-
-if __name__ == '__main__':
-    main()
+if __name__ == "__main__":
+    auth = HTTPBasicAuth(sys.argv[1], sys.argv[2])
+    r = requests.get("https://api.github.com/user", auth=auth)
+    print(r.json().get('id'))
