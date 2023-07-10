@@ -22,7 +22,7 @@ def main():
     if r.status_code == 200:
         try:
             response = r.json()
-            print(response['id'])
+            print(response)
         except ValueError:
             print('None')
     else:
