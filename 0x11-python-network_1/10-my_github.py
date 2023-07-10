@@ -12,9 +12,6 @@ def main():
     import requests as req
     from requests.auth import HTTPBasicAuth as httpAuth
 
-    #password = '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'
-    #username = 'Rwinkah'
-
     password = argv[2]
     username = argv[1]
 
