@@ -24,7 +24,7 @@ def main():
             print('No result')
         else:
             print(f"[{jsN['id']}] {jsN['name']}")
-    except req.exceptions.JSONDecodeError:
+    except req.exceptions.RequestException:
         print('Not a valid JSON')
 
 
