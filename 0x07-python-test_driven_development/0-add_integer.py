@@ -1,21 +1,19 @@
 #!/usr/bin/python3
-"""
-    function to add two ints
-    Args:
-        a: first number
-        b: second number
-    Return:
-        int
+"""  python function to add two numbers and test the function using doctest module
 """
 
+def add_integer(a, b=98): 
+	""" 
+	function to add two numbers 
+	args:
+		a: int / float
+		b: int / float
+	return:
+		int
+"""
 
-def add_integer(a, b=98):
-    """
-        function to add two numbers
-    """
-    if (not isinstance(a, int) and not isinstance(a, float)):
-        raise TypeError("a must be an integer")
-
-    if (not isinstance(b, int) and not isinstance(b, float)):
-        raise TypeError("b must be an integer")
-    return (int(a) + int(b))
+	if type(a) != float and type(a) != int:
+		raise TypeError("a must be an integer")
+	if type(b) != float and type(b) != int:
+		raise TypeError("b must be an integer")
+	return(int(a) + int(b))
